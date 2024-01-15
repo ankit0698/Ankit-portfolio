@@ -22,6 +22,8 @@ export default function Projects() {
         <div className="animate-spin flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
+              target="_blank"
+              rel="noreferrer"
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
