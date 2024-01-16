@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { createContext } from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 export const ThemeContext = createContext(null)
@@ -14,6 +15,7 @@ const RootLayout = () => {
                 <Outlet />
 
             </main>
+            <Footer />
         </>
     )
 }
