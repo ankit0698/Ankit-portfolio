@@ -1,10 +1,9 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
-import { skills } from "../Data/Data"
+import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { skills } from "../Data/Data";
 
 function Skills() {
   return (
-
-    <div className="container min-h-screen mx-auto flex flex-wrap px-10 py-20  md:flex-row flex-col ">
+    <div className=" container min-h-screen mx-auto flex flex-wrap px-10 py-20  md:flex-row flex-col">
       <section id="skills">
         <div className="container px-5 py-10 mx-auto">
           <div className="text-center mb-20">
@@ -13,8 +12,12 @@ function Skills() {
               Skills &amp; Technologies
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4  text-left text-yellow-50 mx-auto">
-              Below is a curated list of my skills, reflecting my proficiency and experience as a frontend developer, particularly focused on React.js.
-              <br /> These skills encompass various aspects of web development, including building interactive and responsive user interfaces, managing state effectively, and ensuring optimal performance.
+              Below is a curated list of my skills, reflecting my proficiency
+              and experience as a frontend developer, particularly focused on
+              React.js.
+              <br /> These skills encompass various aspects of web development,
+              including building interactive and responsive user interfaces,
+              managing state effectively, and ensuring optimal performance.
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -32,8 +35,7 @@ function Skills() {
         </div>
       </section>
     </div>
-
-  )
+  );
 }
 
-export default Skills
+export default Skills;
