@@ -23,7 +23,7 @@ export default function Projects() {
               rel="noreferrer"
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4"
+              className="sm:w-1/2 w-100 p-4 overflow-hidden"
             >
               <div className="flex relative">
                 <img
