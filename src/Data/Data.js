@@ -50,12 +50,13 @@ export const projects = [
     link: "https://github.com/ankit0698/Weather-app",
   },
   {
-    title: "Tic Tac Toe",
-    subtitle: "React and Firebase",
+    title: "Travel Blogger's Website",
+    subtitle: "NextJs and Firebase",
     description:
-      "A Tic Tac Toe game app built using React is a web application that allows two players to play the classic game of Tic Tac Toe in their browser.Fun activity to keep you entertained.",
-    image: "https://media.giphy.com/media/Awg0daMM4WxO9ee5vF/giphy.gif",
-    link: "https://github.com/ankit0698/01-0tic-tac-toe-project",
+      "Online Travel Pedia: A dynamic travel blog website built with Next.js and Firebase, offering a comprehensive platform for exploring destinations, sharing travel experiences, and discovering insider tips and recommendations",
+    image:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZvODA4aHJhM2d4cTJjMTlzcDB1bWwzeHgwNm41ZHJtaG0waWc5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQ7HCJ5IjzUdkZ1Ou5/giphy.gif",
+    link: "https://github.com/ankit0698/online-travel-pedia",
   },
   {
     title: "Investment Calculator App",
