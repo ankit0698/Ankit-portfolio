@@ -37,7 +37,8 @@ export const projects = [
     subtitle: "React and contextAPI",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "https://media.giphy.com/media/Jv6gfhjNkzJ8k/giphy.gif",
+    image:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnlzc25kOHlmaW5xajUyOG15ZWh1aWhyeWl5eG5zb2M5eWc4czBzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btUDtnx3gTwIlmo/giphy.gif",
     link: "https://github.com/ankit0698/Food-delivery-app",
   },
   {
