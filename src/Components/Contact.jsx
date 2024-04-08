@@ -1,19 +1,24 @@
 import { useForm, ValidationError } from "@formspree/react";
-import successIcon from "../assets/success.svg";
+import { BadgeCheckIcon } from "@heroicons/react/solid";
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xrgnkpql");
   if (state.succeeded) {
     return (
-      <div
-        className="container min-h-screen 
-      mx-auto flex flex-wrap px-10 py-20  
-      md:flex-row flex-col items-left"
-      >
-        <img src={successIcon} alt="" className=" h-10 w-10 flex mx-1" />
-        <p className="flex h-32 w-100 pt-1 pl-1 text-2xl text-yellow-100 ">
+      <div className="container min-h-screen mx-auto flex  px-10 py-20 md:flex-row flex-col">
+        <BadgeCheckIcon className="h-10 w-10 text-green-400 flex mx-1" />
+        <p className="flex h-32 w-100 pt-1 pl-1 text-2xl pr-4 text-yellow-100">
           Thanks for Joining! I will get in touch with you soon.
         </p>
+        <div>
+          <Link
+            to="/"
+            className="inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600"
+          >
+            Back to Home
+          </Link>
+        </div>
       </div>
     );
   }

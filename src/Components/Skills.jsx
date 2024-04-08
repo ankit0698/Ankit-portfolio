@@ -3,10 +3,10 @@ import { skills } from "../Data/Data";
 
 function Skills() {
   return (
-    <div className=" container min-h-screen mx-auto flex flex-wrap px-10 py-20  md:flex-row flex-col">
+    <div className=" container min-h-screen mx-auto flex flex-wrap px-4 pb-10  md:flex-row flex-col">
       <section id="skills">
-        <div className="container px-5 py-10 mx-auto">
-          <div className="text-center mb-20">
+        <div className="container px-5 py-8 mx-auto">
+          <div className="text-center mb-4">
             <ChipIcon className="w-10 inline-block mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
               Skills &amp; Technologies
@@ -15,9 +15,6 @@ function Skills() {
               Below is a curated list of my skills, reflecting my proficiency
               and experience as a frontend developer, particularly focused on
               React.js.
-              <br /> These skills encompass various aspects of web development,
-              including building interactive and responsive user interfaces,
-              managing state effectively, and ensuring optimal performance.
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

@@ -1,11 +1,13 @@
 export const skills = [
   "React.js",
+  "Next.js",
   "Redux",
   "Javascript(ES6+)",
   "HTML5/CSS",
   "State Management",
   "Responsive Design",
   "RESTful APIs",
+  "Firebase",
   "React Router",
   "Version Control/git",
   "Web Performance Optimization",
