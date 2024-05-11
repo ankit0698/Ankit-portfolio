@@ -14,7 +14,7 @@ function Contact() {
         <div>
           <Link
             to="/"
-            className="inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600"
+            className="inline-block px-4 py-2 bg-green-500  text-white rounded-full hover:bg-green-600"
           >
             Back to Home
           </Link>
@@ -26,7 +26,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="container min-h-screen mx-auto flex flex-wrap px-10 pb-12  md:flex-row flex-col items-center "
+      className="container min-h-screen mx-auto flex  px-10 pb-12  md:flex-row flex-col items-center "
     >
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 flex flex-col md:items-start mb-16  items-center text-center">
         <img
@@ -34,15 +34,17 @@ function Contact() {
           style={{ filter: "opacity(1)" }}
           src="Hire.svg"
         />
-        <div className="bg-white hover:scale-[1.1] relative flex flex-wrap pr-4 py-4  md:flex-row md:pr-12 rounded-xl shadow-md">
+        <div className="bg-white hover:scale-[1.1] relative flex flex-row  py-4  md:pr-12 rounded-xl shadow-md -mt-[70px] md:-mt-[106px]">
           <div className="md:w-1/2 px-6">
-            <h2 className="title-font font-bold text-black text-xs">ADDRESS</h2>
-            <p className="mt-1 text-rose-600">
+            <h2 className="title-font font-bold text-black text-xs text-left">
+              ADDRESS
+            </h2>
+            <p className="mt-1 text-left text-rose-600">
               Bengaluru <br />
               Karnataka, India
             </p>
           </div>
-          <div className="md:w-1/2 px-6 flex flex-col">
+          <div className="md:w-1/2 px-6 flex flex-col text-left">
             <div>
               <h2 className="title-font font-bold text-black text-xs">EMAIL</h2>
               <a className="text-indigo-600 leading-relaxed">

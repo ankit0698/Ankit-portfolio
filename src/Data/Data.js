@@ -59,7 +59,7 @@ export const projects = [
       "Online Travel Pedia: A dynamic travel blog website built with Next.js and Firebase, offering a comprehensive platform for exploring destinations, sharing travel experiences, and discovering insider tips and recommendations",
     image:
       "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZvODA4aHJhM2d4cTJjMTlzcDB1bWwzeHgwNm41ZHJtaG0waWc5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQ7HCJ5IjzUdkZ1Ou5/giphy.gif",
-    link: "https://github.com/ankit0698/online-travel-pedia",
+    link: "https://onlinetravelpedia.netlify.app/",
   },
   {
     title: "Investment Calculator App",

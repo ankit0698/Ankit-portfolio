@@ -3,11 +3,11 @@ import { skills } from "../Data/Data";
 
 function Skills() {
   return (
-    <div className=" container min-h-screen mx-auto flex flex-wrap px-4 pb-10  md:flex-row flex-col">
+    <div className=" container  mx-auto fpx-4 pb-10 mt-12 flex md:flex-row flex-col">
       <section id="skills">
         <div className="container px-5 py-8 mx-auto">
           <div className="text-center mb-4">
-            <ChipIcon className="w-10 inline-block mb-4" />
+            <ChipIcon className="w-10 inline-block text-white mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
               Skills &amp; Technologies
             </h1>
