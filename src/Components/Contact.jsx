@@ -1,6 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { BadgeCheckIcon } from "@heroicons/react/solid";
-import { Link } from "react-router-dom";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xrgnkpql");
@@ -12,12 +11,12 @@ function Contact() {
           Thanks for Joining! I will get in touch with you soon.
         </p>
         <div>
-          <Link
-            to="/"
+          <a
+            href="/"
             className="inline-block px-4 py-2 bg-green-500  text-white rounded-full hover:bg-green-600"
           >
             Back to Home
-          </Link>
+          </a>
         </div>
       </div>
     );
