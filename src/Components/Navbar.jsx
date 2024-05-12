@@ -9,10 +9,10 @@ export default function Navbar() {
     setShowWork(true);
   };
   return (
-    <header className="bg-blue-800 sticky top-0 z-20">
+    <header className="bg-blue-800 sticky top-0 z-20 scroll-smooth">
       <div className="container mx-auto flex  md:p-5 p-3  flex-row items-center ">
         <a
-          href=""
+          href="#"
           className="inline-flex title-font font-medium   py-1 px-3  rounded text-white hover:text-green-300  md:ml-3  text-xl"
         >
           <HomeIcon />
