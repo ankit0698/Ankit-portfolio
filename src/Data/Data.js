@@ -50,7 +50,7 @@ export const projects = [
       "A weather app built using React hooks and the OpenWeather API is a web application that provides users with real-time weather information for a specified location.",
     image:
       "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnQwaXV0YXczeXE5a3RiZ2UyZDh6M3BmZ21nMjRyaWFpMnUyemdrNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bnpFBKcGArJrwHwaX/giphy.gif",
-    link: "https://github.com/ankit0698/Weather-app",
+    link: "https://salmon-adrian-51.tiiny.site",
   },
   {
     title: "Travel Blogger's Website",
