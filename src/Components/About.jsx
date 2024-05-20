@@ -3,28 +3,25 @@ function About() {
     <>
       <div
         id="about"
-        className="container  mx-auto flex flex-wrap px-10 md:py-20 py-10  md:flex-row flex-col items-center"
+        className=" flex px-10 md:py-20 py-10 bg-[url('bg-image.svg')] bg-no-repeat md:bg-none bg-cover  md:flex-row flex-col items-center "
       >
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center ">
-          <h1 className="title-font text-2xl md:text-3xl mb-4 font-medium text-blue-300 ">
-            Hi, I am Ankit Mishra.
+        <div className=" md:w-1/2  lg:pr-12 md:pr-16  flex flex-col md:items-start text-left mb-16 md:mb-0 md:-mt-20 items-center ">
+          <h1 className="text-bold text-2xl font-['Open_Sans'] md:text-3xl mb-4 font-medium text-blue-300 ">
+            Hi 🧑‍💻 I am Ankit Mishra.
             <br className="hidden lg:inline-block" />I am a front end Web
             developer
           </h1>
-          <p className="mb-8 leading-relaxed text-l text-white">
+          <p className="mb-4 leading-relaxed  text-l md:text-xl text-white">
             with a keen eye for creating engaging and responsive web
             experiences.{" "}
           </p>
-          <br className="hidden lg:inline-block" />
-          <p className="text-white text-l">
+
+          <p className="text-white leading-relaxed text-l md:text-xl mb-4">
             Over the years, I&apos;ve honed my skills in crafting seamless user
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
-
-          <br className="hidden lg:inline-block" />
-          <p className="text-white text-l">
-            {" "}
+          <p className="text-white leading-relaxed text-l md:text-xl">
             Driven by a love for problem-solving and a commitment to staying at
             the forefront of web technologies, I thrive in turning ideas into
             intuitive, user-friendly applications. From translating design
@@ -33,7 +30,7 @@ function About() {
           </p>
 
           <br className="hidden lg:inline-block" />
-          <p className="text-white text-l">
+          <p className="text-white leading-relaxed text-l md:text-xl">
             My journey in the tech world is not just about writing code,
             it&apos;s a continuous exploration of new challenges and a
             commitment to learning. Let&apos;s connect and explore the
@@ -57,11 +54,11 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-lg md:w-1/2 w-full ">
+        <div className=" md:w-5/6   -mt-32 -mr-[280px] ">
           <img
-            className="object-cover object-center rounded animate-trans-right"
+            className="object-contain  rounded opacity-85"
             alt="hero"
-            src="about.svg"
+            src="bg-image.svg"
           />
         </div>
       </div>

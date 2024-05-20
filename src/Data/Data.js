@@ -71,7 +71,7 @@ export const projects = [
   },
   {
     title: "Event Management App",
-    subtitle: "React Transact Queries and Routing",
+    subtitle: "React Tanstack Queries and Routing",
     description:
       "An event management app built using React and Transact Query is a comprehensive web application designed to facilitate the planning, organization, and execution of various events.",
     image: "https://media.giphy.com/media/J6Ukx0azkxCBGUn846/giphy.gif",

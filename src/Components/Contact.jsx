@@ -33,7 +33,7 @@ function Contact() {
           style={{ filter: "opacity(1)" }}
           src="Hire.svg"
         />
-        <div className="bg-white hover:scale-[1.1] relative flex flex-row  py-4  md:pr-12 rounded-xl shadow-md -mt-[70px] md:-mt-[106px]">
+        <div className="bg-white shadow-2xl shadow-blue-900 hover:scale-[1.1] relative flex flex-row  py-4  md:pr-12 rounded-xl  -mt-[70px] md:-mt-[106px]">
           <div className="md:w-1/2 px-6">
             <h2 className="title-font font-bold text-black text-xs text-left">
               ADDRESS
@@ -62,7 +62,7 @@ function Contact() {
       <form
         onSubmit={handleSubmit}
         name="contact"
-        className="md:w-[500px] border-2 border-teal-200 rounded-2xl flex flex-col p-6 mt-4 sm:mt-0"
+        className="md:w-[500px] border-2 shadow-2xl shadow-teal-900  border-teal-200 rounded-2xl flex flex-col p-6 mt-4 sm:mt-0"
       >
         <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
           Work With Me

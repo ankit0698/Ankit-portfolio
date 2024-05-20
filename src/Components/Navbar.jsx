@@ -9,17 +9,17 @@ export default function Navbar() {
     setShowWork(true);
   };
   return (
-    <header className="bg-blue-800 sticky top-0 z-20 scroll-smooth">
+    <header className="bg-black opacity-85 sticky top-0 z-20 scroll-smooth">
       <div className="container mx-auto flex  md:p-5 p-3  flex-row items-center ">
         <a
           href="#"
-          className="inline-flex title-font font-medium   py-1 px-3  rounded text-white hover:text-green-300  md:ml-3  text-xl"
+          className="inline-flex title-font font-medium opacity-1  py-1 px-3  rounded text-white hover:text-green-300  md:ml-3  text-xl"
         >
           <HomeIcon />
           Ankit Mishra
         </a>
 
-        <nav className=" md:mr-auto md:ml-4 md:py-1 md:pl-4 pl-1 border-l-2 md:border-white	items-center text-base ">
+        <nav className=" md:mr-auto md:ml-4 md:py-1 md:pl-4 pl-1 border-l-2 md:border-white opacity-1	items-center text-base ">
           <a href="#projects" className="mr-5 text-white hover:text-green-300">
             My projects
           </a>
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="md:block hidden">
           <button
             onClick={workHandler}
-            className=" inline-flex items-center bg-indigo-500 border-10px py-1 px-3 p-4rem rounded hover:bg-black text-white mt-4 md:mt-0"
+            className=" inline-flex items-center  border-10px py-1 px-3 p-4rem rounded bg-black hover:border-green-300 hover:border-2 hover:shadow-lg focus:outline-none text-white mt-4 md:mt-0"
           >
             Contact Me
             <HandIcon />
