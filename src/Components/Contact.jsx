@@ -28,7 +28,10 @@ function Contact() {
       className=" min-h-screen mx-auto flex  px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
       <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
-        <img className="  max-w-[90%] opacity-80 mt-8  " src="dev.png" />
+        <img
+          className="  max-w-[90%] lg:max-w-[650px] opacity-80 mt-8  "
+          src="dev.png"
+        />
       </div>
       <form
         onSubmit={handleSubmit}

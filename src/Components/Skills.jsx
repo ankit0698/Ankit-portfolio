@@ -3,7 +3,7 @@ import { skills } from "../Data/Data";
 
 function Skills() {
   return (
-    <div className="   mx-auto fpx-4 pb-10 mt-12 flex md:flex-row flex-col">
+    <div className="   mx-auto px-4 pb-10 mt-12 flex md:flex-row flex-col">
       <section id="skills">
         <div className=" px-5 py-8 mx-auto">
           <div className="text-center mb-4">
@@ -17,7 +17,7 @@ function Skills() {
               React.js.
             </p>
           </div>
-          <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div className="flex flex-wrap lg:max-w-1/2 sm:mx-auto sm:mb-2 -mx-2">
             {skills.map((skill) => (
               <div
                 key={skill}
