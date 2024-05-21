@@ -7,7 +7,7 @@ export default function Projects() {
     <section id="projects" className=" text-gray-400  body-font  ">
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
-          <CodeIcon className="mx-auto inline-block text-white w-10 mt-12 md:mt-20 mb-4" />
+          <CodeIcon className="mx-auto inline-block text-white w-10 mt-12 md:mt-16 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I&apos;ve Built
           </h1>
@@ -23,12 +23,12 @@ export default function Projects() {
               rel="noreferrer"
               href={project.link}
               key={project.image}
-              className="relative md:w-[500px] md:h-[450px] w-[300px] h-[450px] border-2  shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl overflow-hidden"
+              className="relative md:w-[500px] md:h-[480px] w-[300px] h-[420px] border-2  shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl overflow-hidden"
             >
               <div className="  ">
                 <img
                   alt="gallery"
-                  className="w-full md:h-[200px] h-[150px] object-cover "
+                  className=" md:h-[250px] h-[150px] w-full   "
                   src={project.image}
                 />
                 <div className="px-8 py-2  relative z-10 w-full    ">

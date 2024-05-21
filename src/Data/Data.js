@@ -1,3 +1,9 @@
+import portfolioImg from "../assets/portfolio.png";
+import travelpediaImg from "../assets/onlinetravelpedia.png";
+import foodDeliveryImg from "../assets/food-delivery.png";
+import investmentImg from "../assets/investment.png";
+import ecomImg from "../assets/e-comm.png";
+
 export const skills = [
   "React.js",
   "Next.js",
@@ -21,8 +27,7 @@ export const projects = [
     subtitle: "React Hooks",
     description:
       " Portfolio is a sleek and modern web application built using React.js, designed to showcase my skills, projects, and achievements in an engaging and user-friendly manner.",
-    image:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamlweWRzZnJ0OGRyeTNxMzlzdGdkOGpiMm15cXhqaWlucXE2NmxvayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0Gqn9yuw8hnPGn5K/giphy.gif",
+    image: portfolioImg,
     link: "https://github.com/ankit0698/Ankit-portfolio",
   },
   {
@@ -39,8 +44,7 @@ export const projects = [
     subtitle: "React and contextAPI",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnlzc25kOHlmaW5xajUyOG15ZWh1aWhyeWl5eG5zb2M5eWc4czBzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btUDtnx3gTwIlmo/giphy.gif",
+    image: foodDeliveryImg,
     link: "https://github.com/ankit0698/Food-delivery-app",
   },
   {
@@ -57,8 +61,7 @@ export const projects = [
     subtitle: "NextJs and Firebase",
     description:
       "Online Travel Pedia: A dynamic travel blog website built with Next.js and Firebase, offering a comprehensive platform for exploring destinations, sharing travel experiences, and discovering insider tips and recommendations",
-    image:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZvODA4aHJhM2d4cTJjMTlzcDB1bWwzeHgwNm41ZHJtaG0waWc5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQ7HCJ5IjzUdkZ1Ou5/giphy.gif",
+    image: travelpediaImg,
     link: "https://onlinetravelpedia.netlify.app/",
   },
   {
@@ -66,15 +69,15 @@ export const projects = [
     subtitle: "React Hooks",
     description:
       "An investment calculator app built using React is a web application designed to help users estimate the future value of their investments based on various parameters.",
-    image: "https://media.giphy.com/media/cJFQJzZxFMhONxDTnt/giphy.gif",
+    image: investmentImg,
     link: "https://github.com/ankit0698/Investment-calculator-app",
   },
   {
-    title: "Event Management App",
-    subtitle: "React Tanstack Queries and Routing",
+    title: "Dummy E-commerce",
+    subtitle: "React Router and redux toolkit",
     description:
-      "An event management app built using React and Transact Query is a comprehensive web application designed to facilitate the planning, organization, and execution of various events.",
-    image: "https://media.giphy.com/media/J6Ukx0azkxCBGUn846/giphy.gif",
-    link: "https://github.com/ankit0698/event-management-app",
+      "An E-commerce app built using React Router and Redux Toolkit, where we can add products in the cart also increase and decrease it's quantity ",
+    image: ecomImg,
+    link: "https://github.com/ankit0698/fake-e-comm",
   },
 ];
