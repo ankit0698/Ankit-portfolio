@@ -21,13 +21,13 @@ function About() {
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
-          <p className="text-white leading-relaxed text-l md:block hidden md:text-xl">
+          {/* <p className="text-white leading-relaxed text-l md:block hidden md:text-xl">
             Driven by a love for problem-solving and a commitment to staying at
             the forefront of web technologies, I thrive in turning ideas into
             intuitive, user-friendly applications. From translating design
             concepts into reality to collaborating with cross-functional teams,
             I enjoy the dynamic nature of frontend development.
-          </p>
+          </p> */}
 
           <br className="hidden lg:inline-block" />
           <p className="text-white leading-relaxed text-l md:text-xl">
@@ -54,9 +54,9 @@ function About() {
             </a>
           </div>
         </div>
-        <div className=" md:w-5/6 lg:max-w-3/4  -mt-64 -mr-[280px] ">
+        <div className=" md:w-5/6 lg:max-w-3/4  -mt-64 lg:-mt-84 -mr-[280px] ">
           <img
-            className="object-contain max-w-[1000px]  rounded opacity-85"
+            className="object-contain max-w-[900px] -mt-24  rounded opacity-85"
             alt="hero"
             src="bg-image.svg"
           />
