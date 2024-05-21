@@ -56,7 +56,7 @@ function About() {
         </div>
         <div className=" md:w-5/6 lg:max-w-3/4  -mt-64 -mr-[280px] ">
           <img
-            className="object-contain max-w-[800px]  rounded opacity-85"
+            className="object-contain max-w-[1000px]  rounded opacity-85"
             alt="hero"
             src="bg-image.svg"
           />
