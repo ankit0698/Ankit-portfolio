@@ -3,7 +3,7 @@ function About() {
     <>
       <div
         id="about"
-        className=" flex px-10 md:py-20 py-10 bg-[url('/bg-image.svg')]  md:bg-none  bg-cover  md:flex-row flex-col items-center "
+        className=" flex px-10 md:pt-20 pt-12 bg-[url('/bg-image.svg')] min-h-screen md:bg-none  bg-cover  md:flex-row flex-col items-center overflow-x-hidden "
       >
         <div className=" md:w-1/2  lg:pr-12 md:pr-16  flex flex-col md:items-start text-left mb-16 md:mb-0 md:-mt-20 items-center ">
           <h1 className="text-bold text-2xl font-['Open_Sans'] md:text-3xl mb-4 font-medium text-blue-300 ">
@@ -16,12 +16,12 @@ function About() {
             experiences.{" "}
           </p>
 
-          <p className="text-white leading-relaxed text-l md:text-xl mb-4">
+          <p className="text-white leading-relaxed text-l  md:text-xl mb-4">
             Over the years, I&apos;ve honed my skills in crafting seamless user
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
-          <p className="text-white leading-relaxed text-l md:text-xl">
+          <p className="text-white leading-relaxed text-l md:block hidden md:text-xl">
             Driven by a love for problem-solving and a commitment to staying at
             the forefront of web technologies, I thrive in turning ideas into
             intuitive, user-friendly applications. From translating design

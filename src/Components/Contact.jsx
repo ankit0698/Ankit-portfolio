@@ -25,44 +25,15 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="container min-h-screen mx-auto flex  px-10 pb-12  md:flex-row flex-col items-center "
+      className=" min-h-screen mx-auto flex  px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
-      <div className="lg:flex-grow md:w-1/2 lg:pr-24 flex flex-col md:items-start mb-16  items-center text-center">
-        <img
-          className=" lg:max-w-lg object-cover w-full"
-          style={{ filter: "opacity(1)" }}
-          src="Hire.svg"
-        />
-        <div className="bg-white shadow-2xl shadow-blue-900 hover:scale-[1.1] relative flex flex-row  py-4  md:pr-12 rounded-xl  -mt-[70px] md:-mt-[106px]">
-          <div className="md:w-1/2 px-6">
-            <h2 className="title-font font-bold text-black text-xs text-left">
-              ADDRESS
-            </h2>
-            <p className="mt-1 text-left text-rose-600">
-              Bengaluru <br />
-              Karnataka, India
-            </p>
-          </div>
-          <div className="md:w-1/2 px-6 flex flex-col text-left">
-            <div>
-              <h2 className="title-font font-bold text-black text-xs">EMAIL</h2>
-              <a className="text-indigo-600 leading-relaxed">
-                ankit0698@gmail.com
-              </a>
-            </div>
-            <div>
-              <h2 className="title-font font-bold text-black tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed text-indigo-600">+91-8340245040</p>
-            </div>
-          </div>
-        </div>
+      <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
+        <img className="  w-[90%] opacity-80 mt-8  " src="dev.png" />
       </div>
       <form
         onSubmit={handleSubmit}
         name="contact"
-        className="md:w-[500px] border-2 shadow-2xl shadow-teal-900  border-teal-200 rounded-2xl flex flex-col p-6 mt-4 sm:mt-0"
+        className="md:w-[500px] w-[320px] border-2 shadow-2xl shadow-teal-900  border-teal-200 rounded-2xl flex flex-col p-6 md:-mt-8 -mt-12"
       >
         <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
           Work With Me

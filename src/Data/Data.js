@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     title: "Weather Forecasting App",
-    subtitle: "React state hooks and Open API",
+    subtitle: "React hooks and weather API",
     description:
       "A weather app built using React hooks and the OpenWeather API is a web application that provides users with real-time weather information for a specified location.",
     image:
