@@ -1,10 +1,9 @@
 const Footer = () => {
-  const day = new Date().toLocaleDateString();
-
   return (
-    <footer className="bg-slate-500 p-4 text-center ">
-      {`Copyright ©
- Ankit ${day}`}
+    <footer className=" bg-cover p-4 text-left   text-white flex flex-col">
+      <h1 className="text-center tracking-widest md:text-xl">
+        Made with ❤️ in India
+      </h1>
     </footer>
   );
 };

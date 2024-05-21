@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-gray-400   body-font lg:-mt-44 min-h-screen "
+      className=" text-gray-400 bg-[url('spiral2.png')] bg-no-repeat md:bg-contain bg-bottom body-font lg:-mt-44 min-h-screen "
     >
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
@@ -26,7 +26,7 @@ export default function Projects() {
               rel="noreferrer"
               href={project.link}
               key={project.image}
-              className="relative md:w-[500px] md:h-[480px] w-[300px] h-[420px] border-2  shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
+              className="relative md:w-[500px] md:h-[480px] w-[300px] h-[420px] border-2 z-10 bg-gray-950 shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
             >
               <div className="  ">
                 <img
