@@ -9,7 +9,7 @@ export default function Navbar() {
     setShowWork(true);
   };
   return (
-    <header className="bg-black opacity-85 sticky top-0 z-20 scroll-smooth">
+    <header className="bg-black  sticky top-0 z-20 scroll-smooth">
       <div className="container mx-auto flex  md:p-5 p-3  flex-row items-center ">
         <a
           href="#"
