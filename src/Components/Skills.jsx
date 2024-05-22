@@ -3,21 +3,21 @@ import { skills } from "../Data/Data";
 
 function Skills() {
   return (
-    <div className="   mx-auto px-4 pb-10 mt-12 flex md:flex-row flex-col">
+    <div className=" container  mx-auto px-4 pb-10 mt-14 flex md:flex-row flex-col">
       <section id="skills">
         <div className=" px-5 py-8 mx-auto">
           <div className="text-center mb-4">
-            <ChipIcon className="w-10 inline-block text-white  mt-12 md:mt-12 mb-4" />
-            <h1 className="md:text-3xl text-2xl font-medium title-font text-white mb-4">
+            <ChipIcon className="w-8 inline-block text-white  mt-12  mb-2" />
+            <h1 className="md:text-3xl text-2xl font-medium title-font text-white mb-2">
               Skills &amp; Technologies
             </h1>
-            <p className="text-base leading-relaxed xl:w-2/4  text-left text-yellow-50 mx-auto">
+            <p className="text-base leading-relaxed xl:w-2/4  text-left text-white mx-auto">
               Below is a curated list of my skills, reflecting my proficiency
               and experience as a frontend developer, particularly focused on
               React.js.
             </p>
           </div>
-          <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div className="flex flex-wrap lg:w-[70%] sm:mx-auto sm:mb-2 -mx-2">
             {skills.map((skill) => (
               <div
                 key={skill}

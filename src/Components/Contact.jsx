@@ -29,20 +29,17 @@ function Contact() {
       className=" min-h-screen mx-auto flex relative   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
       <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
-        <img
-          className="  max-w-[90%] lg:max-w-[650px] opacity-100 mt-8 z-10  "
-          src="dev.png"
-        />
+        <img className="  max-w-[75%]  opacity-100 mt-8 z-10  " src="dev.png" />
       </div>
       <img
-        className="  max-w-[90%] absolute md:top-12 -top-6 translate-x-5 md:translate-x-0 lg:max-w-[650px] mt-8 opacity-85   "
+        className="  max-w-[90%] absolute md:top-12 -top-6 translate-x-5 md:-translate-x-2 lg:max-w-[650px]  mt-8 opacity-85   "
         src={spiralImg}
       />
 
       <form
         onSubmit={handleSubmit}
         name="contact"
-        className="md:w-[500px] w-[320px] border-2 shadow-2xl shadow-teal-900 bg-gray-950 border-teal-200 rounded-2xl flex flex-col z-20 p-6 md:-mt-8 -mt-12"
+        className="md:w-[500px] w-[320px] border-2  shadow-2xl shadow-teal-900 bg-gray-950 border-teal-200 rounded-2xl flex flex-col z-10 p-6 md:-mt-2 -mt-10"
       >
         <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
           Work With Me
