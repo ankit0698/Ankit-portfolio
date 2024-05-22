@@ -25,7 +25,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className=" min-h-screen mx-auto flex bg-[url('src/assets/spiral.png')] bg-no-repeat bg-contain   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
+      className=" min-h-screen mx-auto flex bg-[url('spiral.png')] bg-no-repeat bg-contain   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
       <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
         <img
