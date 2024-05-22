@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-gray-400 bg-[url('src/assets/spiral2.png')] bg-no-repeat md:bg-contain bg-bottom body-font lg:-mt-44 min-h-screen "
+      className=" text-gray-400 bg-[url('spiral2.png')] bg-no-repeat md:bg-contain bg-bottom body-font lg:-mt-44 min-h-screen "
     >
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">

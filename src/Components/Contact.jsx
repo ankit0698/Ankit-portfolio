@@ -28,18 +28,17 @@ function Contact() {
       id="contact"
       className=" min-h-screen mx-auto flex relative   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
-      <div className="group">
-        <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
-          <img
-            className="  max-w-[90%] lg:max-w-[650px] opacity-100 mt-8 z-10  "
-            src="dev.png"
-          />
-        </div>
+      <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
         <img
-          className="  max-w-[90%] absolute md:top-12 top-0 lg:max-w-[650px] mt-8 group-hover:animate-trans-right  "
-          src={spiralImg}
+          className="  max-w-[90%] lg:max-w-[650px] opacity-100 mt-8 z-10  "
+          src="dev.png"
         />
       </div>
+      <img
+        className="  max-w-[90%] absolute md:top-12 -top-6 translate-x-5 md:translate-x-0 lg:max-w-[650px] mt-8 opacity-85   "
+        src={spiralImg}
+      />
+
       <form
         onSubmit={handleSubmit}
         name="contact"
