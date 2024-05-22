@@ -7,9 +7,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-gray-400  body-font lg:-mt-44 min-h-screen relative "
+      className=" text-gray-400  body-font lg:-mt-44 min-h-screen relative overflow-hidden "
     >
-      <img src="spiral2.png" className=" w-full top-56 absolute" />
+      <img
+        src="spiral2.png"
+        className=" w-full top-56 absolute animate-trans-up"
+      />
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
           <CodeIcon className="mx-auto inline-block text-white w-10 mt-4 md:mt-16 mb-4 lg:mb-2" />

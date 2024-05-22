@@ -18,10 +18,17 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "trans-up": {
+          "25%": { transform: "translateX(-5rem)" },
+          "50%": { transform: "translateY(-4rem)" },
+          "75%": { transform: "translateX(5rem)" },
+          "100%": { transform: "translateX(0rem)" },
+        },
       },
       animation: {
         "trans-right": "trans-right 1.5s ease-in-out infinite",
         spinny: "spinny 0.7s ease-in-out 1",
+        "trans-up": "trans-up 6s ease-in-out infinite",
       },
     },
   },
