@@ -8,7 +8,7 @@ export default {
           "0%, 100%": { transform: "translateX(10px)" },
           "50%": { transform: "translateX(0)" },
         },
-        spin: {
+        spinny: {
           from: {
             opacity: "0",
             transform: "translateY(-3rem)",
@@ -21,7 +21,7 @@ export default {
       },
       animation: {
         "trans-right": "trans-right 1.5s ease-in-out infinite",
-        spin: "spin 0.7s ease-in-out 1",
+        spinny: "spinny 0.7s ease-in-out 1",
       },
     },
   },

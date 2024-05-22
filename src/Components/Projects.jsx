@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <button className="w-full absolute bottom-0 text-bold text-xl text-white left-0 py-3 bg-blue-900 group-hover:opacity-100 group-hover:animate-spin md:opacity-0  transition-opacity duration-700 ease-out ">
+              <button className="w-full absolute bottom-0 text-bold text-xl text-white left-0 py-3 bg-blue-900 group-hover:opacity-100 group-hover:animate-spinny md:opacity-0  transition-opacity duration-700 ease-out ">
                 See Demo
               </button>
             </a>

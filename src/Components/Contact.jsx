@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { BadgeCheckIcon } from "@heroicons/react/solid";
+import spiralImg from "../assets/spiral.png";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xrgnkpql");
@@ -13,7 +14,7 @@ function Contact() {
         <div>
           <a
             href="/"
-            className="inline-block px-4 py-2 bg-green-500  text-white rounded-full hover:bg-green-600"
+            className=" px-4 py-2 bg-green-500   text-white rounded-full hover:bg-green-600"
           >
             Back to Home
           </a>
@@ -25,18 +26,24 @@ function Contact() {
   return (
     <section
       id="contact"
-      className=" min-h-screen mx-auto flex bg-[url('src/assets/spiral.png')] bg-no-repeat bg-contain   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
+      className=" min-h-screen mx-auto flex relative   px-10 pb-12 md:mt-0 -mt-20  md:flex-row flex-col items-center "
     >
-      <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
+      <div className="group">
+        <div className="lg:flex-grow md:w-3/4 lg:pr-24 flex flex-col md:items-start mb-16   text-center">
+          <img
+            className="  max-w-[90%] lg:max-w-[650px] opacity-100 mt-8 z-10  "
+            src="dev.png"
+          />
+        </div>
         <img
-          className="  max-w-[90%] lg:max-w-[650px] opacity-100 mt-8 z-10  "
-          src="dev.png"
+          className="  max-w-[90%] absolute md:top-12 top-0 lg:max-w-[650px] mt-8 group-hover:animate-trans-right  "
+          src={spiralImg}
         />
       </div>
       <form
         onSubmit={handleSubmit}
         name="contact"
-        className="md:w-[500px] w-[320px] border-2 shadow-2xl shadow-teal-900 bg-gray-950 border-teal-200 rounded-2xl flex flex-col p-6 md:-mt-8 -mt-12"
+        className="md:w-[500px] w-[320px] border-2 shadow-2xl shadow-teal-900 bg-gray-950 border-teal-200 rounded-2xl flex flex-col z-20 p-6 md:-mt-8 -mt-12"
       >
         <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
           Work With Me
@@ -97,3 +104,5 @@ function Contact() {
 }
 
 export default Contact;
+
+//bg-[url('src/assets/spiral.png')] bg-no-repeat bg-contain
