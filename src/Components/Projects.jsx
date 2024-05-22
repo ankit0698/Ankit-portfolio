@@ -1,4 +1,5 @@
 import { CodeIcon } from "@heroicons/react/solid";
+import spiral2Img from "../assets/spiral2.png";
 
 import { projects } from "../Data/Data";
 
