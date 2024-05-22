@@ -1,13 +1,15 @@
 import { CodeIcon } from "@heroicons/react/solid";
 
 import { projects } from "../Data/Data";
+//bg-[url('spiral2.png')] bg-no-repeat md:bg-contain bg-bottom
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-gray-400 bg-[url('spiral2.png')] bg-no-repeat md:bg-contain bg-bottom body-font lg:-mt-44 min-h-screen "
+      className=" text-gray-400  body-font lg:-mt-44 min-h-screen relative "
     >
+      <img src="spiral2.png" className=" w-full top-56 absolute" />
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
           <CodeIcon className="mx-auto inline-block text-white w-10 mt-4 md:mt-16 mb-4 lg:mb-2" />
