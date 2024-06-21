@@ -31,12 +31,12 @@ export default function Projects() {
               rel="noreferrer"
               href={project.link}
               key={project.image}
-              className="relative md:w-[500px] md:h-[480px] w-[300px] h-[420px] border-2 z-10 bg-gray-950 shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
+              className="relative md:w-[35vw] md:h-[61vh] w-[300px] h-[420px] border-2 z-10 bg-gray-950 shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
             >
               <div className="  ">
                 <img
                   alt="gallery"
-                  className=" md:h-[250px] h-[150px] w-full  "
+                  className=" md:h-[32vh] h-[150px] w-full  "
                   src={project.image}
                 />
 

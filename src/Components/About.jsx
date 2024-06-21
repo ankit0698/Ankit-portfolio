@@ -21,14 +21,6 @@ function About() {
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
-          {/* <p className="text-white leading-relaxed text-l md:block hidden md:text-xl">
-            Driven by a love for problem-solving and a commitment to staying at
-            the forefront of web technologies, I thrive in turning ideas into
-            intuitive, user-friendly applications. From translating design
-            concepts into reality to collaborating with cross-functional teams,
-            I enjoy the dynamic nature of frontend development.
-          </p> */}
-
           <br className="hidden lg:inline-block" />
           <p className="text-white leading-relaxed text-l md:text-xl">
             My journey in the tech world is not just about writing code,
@@ -60,6 +52,29 @@ function About() {
             alt="hero"
             src="bg-image.svg"
           />
+        </div>
+        <div className="absolute -bottom-[12%] md:bottom-[18%] z-10 left-[30%] md:left-[72%] ">
+          <a
+            href="/Ankit-cv.pdf"
+            download="Ankit_Cv.pdf"
+            className=" flex justify-around cursor-pointer bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-2 font-mono w-[150px]"
+          >
+            Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              className="w-5 h-5 animate-bounce text-green-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
     </>
