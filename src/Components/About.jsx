@@ -53,7 +53,7 @@ function About() {
             src="bg-image.svg"
           />
         </div>
-        <div className="absolute -bottom-[12%] md:bottom-[18%] z-10 left-[30%] md:left-[72%] ">
+        <div className="absolute -bottom-[12%] md:bottom-[30%] z-10 left-[30%] md:left-[45%] ">
           <a
             href="/Ankit-cv.pdf"
             download="Ankit_Cv.pdf"
