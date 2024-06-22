@@ -1,4 +1,5 @@
 import { HandIcon, HomeIcon } from "../assets/icons";
+
 import { useState } from "react";
 import Modal from "../UI/Modal";
 

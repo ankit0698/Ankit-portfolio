@@ -3,26 +3,29 @@ function About() {
     <>
       <div
         id="about"
-        className=" flex px-10 lg:mt-0 pt-12 bg-[url('/bg-image.svg')] min-h-screen md:bg-none  bg-cover  md:flex-row flex-col items-center overflow-hidden "
+        className=" flex px-10 lg:mt-0 pt-12 bg-[url('/bg-image.svg')] min-h-screen md:bg-none  bg-cover  md:flex-row flex-col  items-center overflow-hidden "
       >
-        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0 md:-mt-36 items-center ">
-          <h1 className="text-bold text-2xl font-['Open_Sans'] md:text-3xl mb-4 font-medium text-blue-300 ">
-            Hi 🧑‍💻 I am Ankit Mishra.
-            <br className="hidden lg:inline-block" />I am a front end Web
-            developer
+        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0  md:-mt-36 margin-auto ">
+          <h1 className="text-bold text-[1.5rem] md:text-[3rem] font-['Open_Sans']  mb-2 tracking-wide font-medium text-gradient ">
+            Hi<span className="text-white">🧑‍💻</span> I am Ankit Mishra.{" "}
           </h1>
-          <p className="mb-4 leading-relaxed  text-l md:text-xl text-white">
+
+          <p className="text-bold text-[1.5rem] md:text-[1.8rem]  font-['Open_Sans']  mb-4 font-medium text-yellow-100">
+            I am a front end Web developer
+          </p>
+
+          <p className="mb-4 leading-relaxed text-[1rem] md:text-[1.3rem]  text-white">
             with a keen eye for creating engaging and responsive web
             experiences.{" "}
           </p>
 
-          <p className="text-white leading-relaxed text-l  md:text-xl mb-4">
+          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem] mb-4">
             Over the years, I&apos;ve honed my skills in crafting seamless user
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
-          <br className="hidden lg:inline-block" />
-          <p className="text-white leading-relaxed text-l md:text-xl">
+
+          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem]">
             My journey in the tech world is not just about writing code,
             it&apos;s a continuous exploration of new challenges and a
             commitment to learning. Let&apos;s connect and explore the
@@ -53,7 +56,7 @@ function About() {
             src="bg-image.svg"
           />
         </div>
-        <div className="absolute -bottom-[12%] md:bottom-[30%] z-10 left-[30%] md:left-[45%] ">
+        <div className="absolute -bottom-[10%] md:bottom-[30%] z-10 left-[30%] md:left-[45%] ">
           <a
             href="/Ankit-cv.pdf"
             download="Ankit_Cv.pdf"
