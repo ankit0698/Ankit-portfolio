@@ -5,27 +5,27 @@ function About() {
         id="about"
         className=" flex px-10 lg:mt-0 pt-12 bg-[url('/bg-image.svg')] min-h-screen md:bg-none  bg-cover  md:flex-row flex-col  items-center overflow-hidden "
       >
-        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0  md:-mt-36 margin-auto ">
+        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0  md:-mt-44 -mt-4 margin-auto ">
           <h1 className="text-bold text-[1.5rem] md:text-[3rem] font-['Open_Sans']  mb-2 tracking-wide font-medium text-gradient ">
             Hi<span className="text-white">🧑‍💻</span> I am Ankit Mishra.{" "}
           </h1>
 
-          <p className="text-bold text-[1.5rem] md:text-[1.8rem]  font-['Open_Sans']  mb-4 font-medium text-yellow-100">
+          <p className="text-bold text-[1.5rem] md:text-[1.8rem]  font-['Open_Sans']  mb-4 font-medium text-white">
             I am a front end Web developer
           </p>
 
-          <p className="mb-4 leading-relaxed text-[1rem] md:text-[1.3rem]  text-white">
+          <p className="mb-4 leading-relaxed text-[1rem] md:text-[1.3rem]  text-white max-w-[500px]">
             with a keen eye for creating engaging and responsive web
             experiences.{" "}
           </p>
 
-          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem] mb-4">
+          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem] mb-4 max-w-[500px]">
             Over the years, I&apos;ve honed my skills in crafting seamless user
             interfaces and bringing designs to life through clean and efficient
             code.
           </p>
 
-          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem]">
+          <p className="text-white leading-relaxed text-[1rem] md:text-[1.3rem] max-w-[500px]">
             My journey in the tech world is not just about writing code,
             it&apos;s a continuous exploration of new challenges and a
             commitment to learning. Let&apos;s connect and explore the
