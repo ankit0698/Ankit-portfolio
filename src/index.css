@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-gradient {
+/* .text-gradient {
   color: hsl(0 0% 100% / 0.2);
   background-clip: text;
-  background-image: linear-gradient(90deg, red, rgb(96, 96, 183));
-}
+  background-image: linear-gradient(
+    180deg,
+    rgb(9, 159, 233),
+    rgb(206, 105, 10)
+  );
+} */

@@ -11,7 +11,7 @@ export default function Navbar() {
   };
   return (
     <header className="bg-black  sticky top-0 z-20 scroll-smooth">
-      <div className="container mx-auto flex  md:p-5 p-3  flex-row items-center ">
+      <div className="container mx-auto flex  md:p-5 p-3  flex-row justify-between items-center ">
         <a
           href="#"
           className="inline-flex title-font font-medium opacity-1  py-1 px-3  rounded text-white hover:text-green-300 hover:scale-[1.1]  md:ml-3  text-xl "
