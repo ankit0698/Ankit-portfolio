@@ -5,7 +5,7 @@ function About() {
         id="about"
         className=" flex px-10 lg:mt-0 pt-12 bg-[url('/bg-image.svg')] min-h-screen md:bg-none  bg-cover  md:flex-row flex-col  items-center overflow-hidden "
       >
-        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0  md:-mt-44 -mt-4 margin-auto ">
+        <div className=" md:w-1/2   md:pr-16  flex flex-col md:items-start text-left mb-8 md:mb-0    md:-mt-[10em] -mt-4 margin-auto ">
           <h1 className="text-bold text-[1.5rem] md:text-[2.5rem] font-['Open_Sans']  mb-2 tracking-wide font-medium text-teal-200 ">
             Hi I am Ankit Mishra<span className="text-white">👨🏻‍💻</span>
           </h1>
