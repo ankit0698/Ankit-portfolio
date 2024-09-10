@@ -11,7 +11,7 @@ export default function Projects() {
     >
       <img
         src="spiral2.png"
-        className=" w-full top-56 absolute animate-trans-up"
+        className="hidden md:block w-full top-56 absolute animate-trans-up"
       />
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
