@@ -1,12 +1,12 @@
 function About() {
   return (
     <>
-      <main className="w-full md:min-h-screen">
+      <main className="w-full ">
         <div
           id="about"
-          className="flex bg-[url('/bg-image.svg')]  md:bg-none bg-cover md:flex-row flex-col  overflow-hidden "
+          className="flex bg-[url('/bg-image.svg')] min-h-screen  md:bg-none bg-cover md:flex-row flex-col  overflow-hidden "
         >
-          <div className="w-full md:w-[40%] flex flex-col md:items-start text-left mb-8 md:mb-0 px-8 md:px-16 py-[5%] ">
+          <div className="w-full md:w-[40%] flex flex-col md:items-start text-left mb-8 md:mb-0 px-8 md:px-16 py-[5%]  ">
             <h1 className="text-bold text-[1.5rem] md:text-[2rem] font-['Space_grotesk'] mb-2 tracking-wide font-medium text-white">
               Hi, I am Ankit Mishra <span className="text-white"></span>
             </h1>
@@ -34,17 +34,17 @@ function About() {
               together.
             </p>
 
-            <div className="flex md:justify-start mt-6">
+            <div className="flex md:justify-start mt-6 space-x-4">
               <a
                 href="#contact"
-                className="text-white bg-primary border border-secondary px-[1em] py-[.5em] font-['Space_grotesk'] rounded-full focus:outline-none hover:bg-green-600 md:text-l"
+                className="flex-1 min-w-[140px] text-center text-white bg-primary border border-secondary px-[1em] py-[.5em] font-['Space_grotesk'] rounded-[22px] focus:outline-none hover:bg-green-600 md:text-l whitespace-nowrap"
               >
                 Work With Me
               </a>
 
               <a
                 href="#projects"
-                className="ml-4 text-white bg-gray-800 border border-gray-400 px-[1em] py-[.5em] font-['Space_grotesk'] text-center focus:outline-none hover:bg-gray-700 rounded-[22px] md:text-l"
+                className="flex-1 min-w-[140px] text-center text-white bg-gray-800 border border-gray-400 px-[1em] py-[.5em] font-['Space_grotesk'] rounded-[22px] focus:outline-none hover:bg-gray-700 md:text-l whitespace-nowrap"
               >
                 See My Past Work
               </a>
