@@ -10,7 +10,7 @@ function Skills() {
     <div className="w-full px-4 pb-10 mt-14 flex md:flex-row flex-col overflow-hidden">
       <section id="skills" className="w-full">
         <div className="py-8 w-full">
-          <div className="text-center mb-12">
+          <div className="md:text-center mb-12">
             <ChipIcon className="w-8 inline-block text-white mt-12 mb-2" />
             <h1 className="md:text-3xl text-2xl font-medium title-font font-primary text-white mb-2">
               Skills &amp; Technologies
