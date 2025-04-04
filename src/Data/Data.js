@@ -9,6 +9,7 @@ import weatherImg from "../assets/weather.jpeg";
 export const skills = [
   "React.js",
   "Next.js",
+  "React Native",
   "Redux",
   "Javascript(ES6+)",
   "HTML5/CSS",

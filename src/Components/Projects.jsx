@@ -15,11 +15,11 @@ export default function Projects() {
       />
       <div className="  px-5 py-10 mx-auto text-center">
         <div className="flex flex-col w-full mb-8">
-          <CodeIcon className="mx-auto inline-block text-white w-10 mt-4 md:mt-16 mb-4 lg:mb-2" />
-          <h1 className=" text-2xl md:text-3xl font-medium title-font mb-2  text-white">
+          <CodeIcon className="mx-auto inline-block text-textPrimary w-10 mt-4 md:mt-16 mb-4 lg:mb-2" />
+          <h1 className=" text-2xl md:text-3xl font-medium font-primary title-font mb-2  text-white">
             Apps I&apos;ve Built
           </h1>
-          <p className="  text-white mx-auto leading-relaxed text-l md:text-xl">
+          <p className="  text-textPrimary font-primary mx-auto leading-relaxed text-l md:text-xl">
             Following are the list of apps I&apos;ve built using different
             concepts of React
           </p>
@@ -31,7 +31,7 @@ export default function Projects() {
               rel="noreferrer"
               href={project.link}
               key={project.image}
-              className="relative md:w-[35vw] md:h-[61vh] w-[300px] h-[420px] border-2 z-10 bg-gray-950 shadow-2xl shadow-blue-900 border-blue-900 mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
+              className="relative md:w-[35vw] md:h-[61vh] w-[300px] h-[420px] border-2 z-10 bg-gray-950 shadow-2xl shadow-secondary border-secondary mx-auto justify-center items-center mb-4  rounded-xl hover:scale-[1.04] transition delay-150 duration-300 ease-in-out  overflow-hidden group "
             >
               <div className="  ">
                 <img
@@ -41,13 +41,13 @@ export default function Projects() {
                 />
 
                 <div className="px-8 py-2  relative z-10 w-full    ">
-                  <h2 className="tracking-widest text-sm md:text-2xl title-font  group-hover:-translate-x-12 transition duration-700 ease-in-out  font-medium text-green-400 mb-1">
+                  <h2 className="tracking-widest text-sm md:text-2xl title-font font-primary  group-hover:-translate-x-12 transition duration-700 ease-in-out  font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font md:text-lg text-left font-medium text-white mb-3 ">
+                  <h1 className="title-font md:text-lg text-left font-medium font-primary text-white mb-3 ">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed text-left text-sm  -mt-2 ">
+                  <p className="leading-relaxed text-left  text-textPrimary font-primary text-sm  -mt-2 ">
                     {project.description}
                   </p>
                 </div>
