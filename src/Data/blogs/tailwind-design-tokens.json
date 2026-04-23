@@ -1,0 +1,37 @@
+{
+  "slug": "tailwind-design-tokens",
+  "title": "Using Tailwind tokens to keep a portfolio consistent",
+  "tag": "Design systems",
+  "date": "2026-01-30",
+  "readTime": "7 min read",
+  "description": "How semantic colors, spacing, gradients, and reusable component classes keep a custom interface coherent.",
+  "hero": "Tailwind is most effective when it becomes a design system API. The goal is not to memorize utilities, but to create a small vocabulary that keeps the interface coherent.",
+  "sections": [
+    {
+      "heading": "Use semantic color names",
+      "body": [
+        "Raw colors like cyan or slate are useful, but semantic colors communicate intent. Tokens such as ink, surface, accent, success, and warning make components easier to reason about.",
+        "They also make theme switching much easier because the component asks for a role, not a specific color."
+      ]
+    },
+    {
+      "heading": "Create reusable component classes sparingly",
+      "body": [
+        "A class like glass-panel is useful because it bundles repeated visual decisions: border, background, blur, radius, and shadow. A class that hides one utility is usually not worth it.",
+        "The best abstractions remove repeated judgment while keeping the markup understandable."
+      ]
+    },
+    {
+      "heading": "Keep motion tokenized too",
+      "body": [
+        "Animation names such as reveal, float, and marquee make motion decisions reusable. They also make it easier to adjust timing globally instead of tuning every component by hand.",
+        "Motion belongs in the visual system, not only in individual components."
+      ]
+    }
+  ],
+  "takeaways": [
+    "Use semantic tokens for intent.",
+    "Only abstract repeated visual decisions.",
+    "Treat motion as part of the design system."
+  ]
+}

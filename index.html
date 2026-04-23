@@ -5,6 +5,18 @@
     <link rel="icon" type="image" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ankit Mishra</title>
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.dataset.theme =
+          storedTheme === "light" || storedTheme === "dark"
+            ? storedTheme
+            : prefersLight
+              ? "light"
+              : "dark";
+      })();
+    </script>
   </head>
 
   <body>

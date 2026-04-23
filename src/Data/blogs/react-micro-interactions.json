@@ -1,0 +1,37 @@
+{
+  "slug": "react-micro-interactions",
+  "title": "Micro-interactions that make React apps feel faster",
+  "tag": "Motion",
+  "date": "2026-02-27",
+  "readTime": "5 min read",
+  "description": "Loading states, hover intent, focus treatment, and transition timing that improve perceived quality.",
+  "hero": "Speed is not only a network metric. Interfaces feel faster when they acknowledge user intent, reveal hierarchy clearly, and avoid jarring layout shifts.",
+  "sections": [
+    {
+      "heading": "Motion should explain state",
+      "body": [
+        "The best micro-interactions are functional. They confirm that a control is interactive, show that content has changed, or guide attention to the next useful area.",
+        "Hover lift, focus rings, skeleton states, and subtle transitions can make a product feel more responsive without adding visual noise."
+      ]
+    },
+    {
+      "heading": "Protect layout stability",
+      "body": [
+        "A fast animation cannot save a layout that jumps. I prefer fixed media ratios, predictable control sizes, and reserved space for loading or empty states.",
+        "This is especially important in dashboards, cards, and grids where users scan repeatedly."
+      ]
+    },
+    {
+      "heading": "Respect reduced motion",
+      "body": [
+        "Motion preferences are part of accessibility. If a user asks for reduced motion, the interface should reduce or remove non-essential transitions.",
+        "This portfolio uses a reduced-motion media query so the experience stays usable for more people."
+      ]
+    }
+  ],
+  "takeaways": [
+    "Use motion to explain behavior.",
+    "Reserve space to prevent layout jumps.",
+    "Respect reduced-motion preferences."
+  ]
+}

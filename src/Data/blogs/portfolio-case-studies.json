@@ -1,0 +1,37 @@
+{
+  "slug": "portfolio-case-studies",
+  "title": "Designing portfolio projects like product case studies",
+  "tag": "UX writing",
+  "date": "2026-03-18",
+  "readTime": "4 min read",
+  "description": "How to move beyond screenshots and explain problem, tradeoffs, implementation, and measurable outcomes.",
+  "hero": "A project card shows what was built. A case study shows how you think. The difference matters when a portfolio is meant to communicate professional maturity.",
+  "sections": [
+    {
+      "heading": "Lead with the product problem",
+      "body": [
+        "A strong case study starts before the interface. It explains the user need, business constraint, technical limitation, or workflow problem that made the work necessary.",
+        "This gives the reader a reason to care about the implementation choices that follow."
+      ]
+    },
+    {
+      "heading": "Explain tradeoffs clearly",
+      "body": [
+        "Every interface is a chain of decisions. A senior portfolio should make those decisions visible: why this layout, why this state model, why this navigation pattern, and what was intentionally left out.",
+        "Tradeoffs are proof of judgment. They show that the developer was not just assembling screens."
+      ]
+    },
+    {
+      "heading": "End with impact",
+      "body": [
+        "Impact can be quantitative, but it does not always have to be. For personal projects, impact can mean improved scan speed, cleaner state ownership, stronger accessibility, or a more maintainable component model.",
+        "The key is to connect the result back to the original problem."
+      ]
+    }
+  ],
+  "takeaways": [
+    "Frame projects around problems, not tools.",
+    "Make implementation decisions visible.",
+    "Connect outcomes to the reason the project exists."
+  ]
+}

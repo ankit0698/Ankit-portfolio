@@ -1,89 +1,154 @@
+import {
+  ArrowRightIcon,
+  CodeIcon,
+  DownloadIcon,
+  LightningBoltIcon,
+  ShieldCheckIcon,
+  TerminalIcon,
+} from "@heroicons/react/solid";
+import ankitImage from "../assets/ankit.png";
+import { aboutHighlights, profile } from "../Data/Data";
+
+const workAreas = [
+  {
+    icon: CodeIcon,
+    title: "Frontend & mobile apps",
+    copy: "Built production UI with React, Next.js, TypeScript, Redux, Tailwind CSS, and React Native across web and mobile products.",
+  },
+  {
+    icon: LightningBoltIcon,
+    title: "AI product workflows",
+    copy: "Worked on multi-LLM platforms, agentic AI flows, MCP servers, chat-based task execution, and AI-driven mobile experiences.",
+  },
+  {
+    icon: ShieldCheckIcon,
+    title: "Backend & delivery",
+    copy: "Hands-on with NestJS, Node.js, PostgreSQL, Prisma, AWS, Docker, Kubernetes, GitHub Actions, and production deployment workflows.",
+  },
+];
+
 function About() {
   return (
     <>
-      <main className="w-full ">
-        <div
-          id="about"
-          className="flex bg-[url('/bg-image.svg')] min-h-screen  md:bg-none bg-cover md:flex-row flex-col  overflow-hidden "
-        >
-          <div className="w-full md:w-[40%] flex flex-col md:items-start text-left mb-8 md:mb-0 px-8 md:px-16 py-[5%]  ">
-            <h1 className="text-bold text-[1.5rem] md:text-[2rem] font-['Space_grotesk'] mb-2 tracking-wide font-medium text-white">
-              Hi, I am Ankit Mishra <span className="text-white"></span>
-            </h1>
-
-            <p className="text-bold tracking-wider text-[1rem] md:text-[1.6rem] mb-4 font-medium font-['Space_grotesk'] text-textPrimary">
-              I am a Web Developer
-            </p>
-
-            <p className="mb-4 tracking-wider leading-relaxed font-['Space_grotesk'] text-[1rem] md:text-[1.3rem] text-textPrimary max-w-[500px]">
-              With a keen eye for creating engaging and responsive web
-              experiences.
-            </p>
-
-            <p className="text-[#E3DACC] tracking-wider leading-relaxed font-['Space_grotesk'] text-[1rem] md:text-[1.3rem] mb-4 max-w-[500px]">
-              Over the years, I&apos;ve honed my skills in crafting seamless
-              user interfaces and bringing designs to life through clean and
-              efficient code.
-            </p>
-
-            <p className="text-textPrimary tracking-wider text-[1rem] font-primary md:text-[1.3rem] max-w-[500px]">
-              My journey in the tech world is not just about writing code,
-              it&apos;s a continuous exploration of new challenges and a
-              commitment to learning. Let&apos;s connect and explore the
-              possibilities of crafting exceptional digital experiences
-              together.
-            </p>
-
-            <div className="flex md:justify-start mt-6 space-x-4">
-              <a
-                href="#contact"
-                className="flex-1 min-w-[140px] text-center text-white bg-primary border border-secondary px-[1em] py-[.5em] font-['Space_grotesk'] rounded-[22px] focus:outline-none hover:bg-green-600 md:text-l whitespace-nowrap"
-              >
-                Work With Me
-              </a>
-
-              <a
-                href="#projects"
-                className="flex-1 min-w-[140px] text-center text-white bg-gray-800 border border-gray-400 px-[1em] py-[.5em] font-['Space_grotesk'] rounded-[22px] focus:outline-none hover:bg-gray-700 md:text-l whitespace-nowrap"
-              >
-                See My Past Work
-              </a>
+      <section
+        id="hero"
+        className="relative min-h-[calc(100vh-4rem)] overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-grid-lines bg-[length:64px_64px] opacity-[0.18]" />
+        <div className="container relative grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-10 py-14 lg:grid-cols-[minmax(0,40rem)_minmax(26rem,34rem)] lg:justify-between lg:gap-16 lg:py-16">
+          <div className="animate-reveal max-w-2xl">
+            <div className="section-kicker">
+              <TerminalIcon className="mr-2 h-4 w-4" />
+              {profile.experience} building web, mobile, and AI product
+              experiences
             </div>
-          </div>
+            <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.06] text-ink-50 sm:text-5xl lg:text-[3.65rem] xl:text-[4.1rem]">
+              Hi, I&apos;m {profile.name}. I build{" "}
+              <span className="text-gradient">frontend products</span> and solve
+              practical software problems.
+            </h1>
+            <p className="mt-5 max-w-xl text-base leading-7 text-ink-200 sm:text-lg sm:leading-8">
+              {profile.pitch}
+            </p>
 
-          <div className="w-full md:w-[59%]  relative -mt-[2%]">
-            <img
-              className="object-cover  hidden md:block  pt-6 overflow-hidden rounded opacity-75"
-              alt="hero"
-              src="bg-image.svg"
-            />
-
-            <div className="absolute block  z-10 left-1/3 md:-left-[6%] top-1/3 ">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="/#projects"
+                className="control-button bg-accent-gradient text-white dark:text-accent-contrast shadow-glow hover:scale-[1.02]"
+              >
+                Explore work
+                <ArrowRightIcon className="h-4 w-4" />
+              </a>
               <a
                 href="/Ankit-cv.pdf"
                 download="Ankit_Cv.pdf"
-                className=" flex justify-around cursor-pointer md:bg-gray-900 bg-primary border-2  border-gray-500 font-primary px-3 py-2 rounded-full text-textPrimary tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-2  w-[150px]"
+                className="control-button border border-ink-50/10 bg-ink-50/[0.06] text-ink-50 hover:border-accent-cyan/50 hover:bg-accent-cyan/10"
               >
-                Resume
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  className="w-5 h-5 animate-bounce text-secondary"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                  ></path>
-                </svg>
+                <DownloadIcon className="h-4 w-4" />
+                Download resume
               </a>
+            </div>
+
+            <dl className="mt-8 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3">
+              {profile.metrics.map((metric) => (
+                <div key={metric.label} className="glass-panel px-4 py-4">
+                  <dt className="font-mono text-[11px] uppercase text-ink-400">
+                    {metric.label}
+                  </dt>
+                  <dd className="mt-2 font-display text-2xl font-semibold text-ink-50 sm:text-3xl">
+                    {metric.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-md self-center sm:max-w-lg lg:max-w-[34rem]">
+            <div className="absolute -left-8 -top-8 h-44 w-44 rounded-full bg-accent-cyan/30 blur-3xl" />
+            <div className="absolute -right-8 -top-6 h-40 w-40 rounded-full bg-accent-violet/30 blur-3xl" />
+            <div className="absolute -bottom-10 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-accent-amber/20 blur-3xl" />
+
+            <div className="relative overflow-hidden rounded-panel shadow-[0_0_42px_rgba(54,244,226,0.18),26px_-22px_70px_rgba(158,124,255,0.18),-24px_28px_64px_rgba(247,198,106,0.12)]">
+              <img
+                src={ankitImage}
+                alt={`${profile.name}, ${profile.role}`}
+                className="aspect-[3/4] w-full object-cover object-center"
+              />
             </div>
           </div>
         </div>
-      </main>
+      </section>
+
+      <section id="about" className="section-shell">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <span className="section-kicker">About</span>
+            <h2 className="section-title">
+              A frontend-focused developer who also understands backend, cloud,
+              and AI product workflows.
+            </h2>
+            <p className="section-copy">
+              I started with frontend development and still enjoy UI work the
+              most, but my recent work has also involved APIs, databases, cloud
+              deployments, React Native apps, and AI agent workflows. I like
+              understanding the full product path so I can build features that
+              actually work end to end.
+            </p>
+          </div>
+
+          <div className="grid gap-4">
+            {aboutHighlights.map((highlight, index) => (
+              <div
+                key={highlight}
+                className="glass-panel interactive-card flex gap-4 p-5"
+              >
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-control bg-accent-cyan/10 font-mono text-sm text-accent-cyan">
+                  0{index + 1}
+                </span>
+                <p className="leading-7 text-ink-200">{highlight}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-14 grid gap-4 lg:grid-cols-3">
+          {workAreas.map((area) => {
+            const Icon = area.icon;
+            return (
+              <div
+                key={area.title}
+                className="glass-panel interactive-card p-6"
+              >
+                <Icon className="h-7 w-7 text-accent-cyan" />
+                <h3 className="mt-5 font-display text-xl font-semibold text-ink-50">
+                  {area.title}
+                </h3>
+                <p className="mt-3 leading-7 text-ink-300">{area.copy}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 }

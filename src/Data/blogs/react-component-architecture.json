@@ -1,0 +1,37 @@
+{
+  "slug": "react-component-architecture",
+  "title": "How I structure React components for long-lived UI",
+  "tag": "Architecture",
+  "date": "2026-04-01",
+  "readTime": "6 min read",
+  "description": "A practical breakdown of containers, presentational components, data boundaries, and design token usage.",
+  "hero": "Component architecture is less about folders and more about controlling change. The goal is to make product behavior easy to extend without making the interface fragile.",
+  "sections": [
+    {
+      "heading": "Start with ownership boundaries",
+      "body": [
+        "I separate components by responsibility before I separate them by visual size. A component that fetches, filters, formats, and renders data is doing too much even if the file is short.",
+        "For long-lived UI, I prefer route-level screens, feature containers, reusable view components, and small primitives. This gives each layer a reason to exist."
+      ]
+    },
+    {
+      "heading": "Keep data transformation close to the feature",
+      "body": [
+        "Generic utilities are useful, but moving every transformation into a shared helper too early makes the codebase harder to follow. I keep feature-specific shaping close to the feature until there is real reuse.",
+        "The test is simple: if another feature can use the same function without understanding the original screen, it may deserve to be shared."
+      ]
+    },
+    {
+      "heading": "Design tokens reduce negotiation",
+      "body": [
+        "A tokenized UI removes repeated decisions from daily implementation. Instead of choosing a border color, shadow, radius, and text color each time, the component chooses from a known visual language.",
+        "This is why the portfolio uses semantic classes like glass-panel, section-title, control-button, and technical-label."
+      ]
+    }
+  ],
+  "takeaways": [
+    "Name components by responsibility, not only by appearance.",
+    "Keep feature logic close until reuse is obvious.",
+    "Use semantic styling primitives to keep the UI consistent."
+  ]
+}
