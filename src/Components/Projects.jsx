@@ -18,9 +18,9 @@ export default function Projects() {
       <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
         <div>
           <span className="section-kicker">Selected work</span>
-          <h2 className="section-title">Projects framed by product decisions, not just screenshots.</h2>
+          <h2 className="section-title">Product decisions first. Screenshots second.</h2>
           <p className="section-copy">
-            Each project card highlights the product surface, stack, interaction quality, and implementation outcomes that matter in professional front-end work.
+            A project only earns its place here when the product surface, technical choices, interaction details, and delivery outcomes all have a clear reason to exist.
           </p>
         </div>
         <a

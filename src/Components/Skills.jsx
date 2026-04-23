@@ -13,11 +13,11 @@ function Skills() {
             Skills
           </span>
           <h2 className="section-title">
-            A frontend-first stack with full-stack and AI product experience.
+            A frontend-first stack with full stack and AI product experience.
           </h2>
           <p className="section-copy">
-            My strongest area is frontend development, but I have also worked
-            with backend APIs, databases, cloud deployments, mobile apps, and
+            Frontend is the strongest lane, supported by practical experience
+            across backend APIs, databases, cloud deployments, mobile apps, and
             AI-driven workflows.
           </p>
         </div>
@@ -33,8 +33,12 @@ function Skills() {
       <div className="mt-12 grid gap-4 lg:grid-cols-3">
         {skillGroups.map((group) => (
           <div key={group.title} className="glass-panel interactive-card p-6">
-            <h3 className="font-display text-xl font-semibold text-ink-50">{group.title}</h3>
-            <p className="mt-3 min-h-16 leading-7 text-ink-300">{group.description}</p>
+            <h3 className="font-display text-xl font-semibold text-ink-50">
+              {group.title}
+            </h3>
+            <p className="mt-3 min-h-16 leading-7 text-ink-300">
+              {group.description}
+            </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span

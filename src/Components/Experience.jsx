@@ -15,7 +15,7 @@ function Experience() {
             AI workflows.
           </h2>
           <p className="section-copy">
-            I have worked on enterprise frontend applications, production UI
+            Experience spans enterprise frontend applications, production UI
             systems, React Native apps, APIs, and agentic AI platforms.
           </p>
         </div>

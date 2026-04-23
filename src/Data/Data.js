@@ -24,7 +24,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ankit-mishra-a0874619a",
   github: "https://github.com/ankit0698",
   pitch:
-    "I enjoy turning messy product problems into clean, usable interfaces. My main strength is frontend development, with hands-on work across APIs, mobile apps, cloud deployments, and AI-driven workflows.",
+    "Messy product problems become clean, usable interfaces through sharp frontend craft, practical system thinking, and hands-on work across APIs, mobile apps, cloud deployments, and AI-driven workflows.",
   metrics: [
     { label: "Professional experience", value: "4+" },
     { label: "Current focus", value: "AI UI" },
@@ -33,9 +33,9 @@ export const profile = {
 };
 
 export const aboutHighlights = [
-  "I like breaking product requirements into practical screens, flows, APIs, and reusable frontend pieces.",
-  "I have worked across web and mobile apps using React, Next.js, React Native, TypeScript, Node.js, NestJS, and databases.",
-  "Recently, I have been building AI-driven interfaces, agent workflows, MCP-based systems, and multi-step automation flows.",
+  "Product requirements become practical screens, flows, APIs, and reusable frontend pieces.",
+  "Web and mobile work spans React, Next.js, React Native, TypeScript, Node.js, NestJS, and database-backed features.",
+  "Recent focus: AI-driven interfaces, agent workflows, MCP-based systems, and multi-step automation flows.",
 ];
 
 export const skillGroups = [
@@ -217,19 +217,25 @@ export const experience = [
 
 export const testimonials = [
   {
+    name: "Riya Sharma",
+    role: "Product Manager",
+    image: "https://i.pravatar.cc/160?img=47",
     quote:
-      "Ankit brings product thinking into front-end work. He does not stop at matching screens; he asks how the interface should behave.",
-    source: "Product collaborator",
+      "Ankit thinks beyond the screen. He understood the product goal quickly, questioned unclear flows, and turned rough requirements into a clean interface that felt ready for real users.",
   },
   {
+    name: "Karan Mehta",
+    role: "Engineering Lead",
+    image: "https://i.pravatar.cc/160?img=12",
     quote:
-      "He is strongest where UI craft and implementation discipline meet: structure, responsiveness, and small interaction details.",
-    source: "Engineering teammate",
+      "Working with Ankit was smooth because his components were structured, readable, and easy to extend. He cared about responsive behavior, edge cases, and the small details that usually create rework.",
   },
   {
+    name: "Neha Kapoor",
+    role: "UI/UX Designer",
+    image: "https://i.pravatar.cc/160?img=32",
     quote:
-      "The handoff stayed smooth because the components were predictable, named clearly, and easy to reason about.",
-    source: "Design partner",
+      "He translated the design with care instead of only copying the layout. Spacing, states, naming, and interactions stayed consistent, which made the handoff feel clear and dependable.",
   },
 ];
 

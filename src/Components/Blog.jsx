@@ -10,9 +10,9 @@ function Blog() {
             <BookOpenIcon className="mr-2 h-4 w-4" />
             Blog
           </span>
-          <h2 className="section-title">Writing that turns process into proof.</h2>
+          <h2 className="section-title">Process, written as proof.</h2>
           <p className="section-copy">
-            Short technical essays make the portfolio feel current and senior by showing how decisions are made, not only what was built.
+            Short technical essays capture the thinking behind the build: tradeoffs, implementation choices, edge cases, and the decisions that shape a stronger interface.
           </p>
           <a href="/blog" className="control-button mt-6 border border-ink-50/10 bg-ink-50/[0.06] text-ink-50 hover:border-accent-cyan/50 hover:bg-accent-cyan/10">
             View archive

@@ -43,9 +43,9 @@ function About() {
               experiences
             </div>
             <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.06] text-ink-50 sm:text-5xl lg:text-[3.65rem] xl:text-[4.1rem]">
-              Hi, I&apos;m {profile.name}. I build{" "}
-              <span className="text-gradient">frontend products</span> and solve
-              practical software problems.
+              Hi, I&apos;m {profile.name}. Building{" "}
+              <span className="text-gradient">frontend products</span> that make
+              practical software feel clear.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-ink-200 sm:text-lg sm:leading-8">
               {profile.pitch}
@@ -108,11 +108,10 @@ function About() {
               and AI product workflows.
             </h2>
             <p className="section-copy">
-              I started with frontend development and still enjoy UI work the
-              most, but my recent work has also involved APIs, databases, cloud
-              deployments, React Native apps, and AI agent workflows. I like
-              understanding the full product path so I can build features that
-              actually work end to end.
+              Frontend is the core craft, with recent work extending into APIs,
+              databases, cloud deployments, React Native apps, and AI agent
+              workflows. That full product path shapes features that hold up
+              from the first screen to production delivery.
             </p>
           </div>
 

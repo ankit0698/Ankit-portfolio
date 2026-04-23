@@ -27,7 +27,7 @@ function Contact() {
             Message sent.
           </h2>
           <p className="mt-3 text-ink-200">
-            Thanks for reaching out. I will get back to you soon.
+            Thanks for reaching out. A reply will follow soon.
           </p>
           <a
             href="#"
@@ -52,7 +52,7 @@ function Contact() {
             Let&apos;s discuss what you&apos;re building next.
           </h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-ink-200">
-            I am open to frontend-focused roles, full-stack product work, React
+            Open to frontend-focused roles, full-stack product work, React
             Native apps, and AI workflow interfaces where clean execution and
             practical problem solving matter.
           </p>
