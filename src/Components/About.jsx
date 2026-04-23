@@ -6,7 +6,7 @@ import {
   ShieldCheckIcon,
   TerminalIcon,
 } from "@heroicons/react/solid";
-import ankitImage from "../assets/ankit.png";
+import ankitImage from "../assets/ankit.webp";
 import { aboutHighlights, profile } from "../Data/Data";
 
 const workAreas = [
