@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import About from "./Components/About";
 import Blog from "./Components/Blog";
 import BlogIndex from "./Components/BlogIndex";
@@ -38,6 +39,11 @@ const shouldShowIntro = () => {
 function App() {
   const route = getRoute();
   const [showIntro, setShowIntro] = useState(shouldShowIntro);
+  const shouldReduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll();
+  const backgroundY = useTransform(scrollYProgress, [0, 1], [0, -180]);
+  const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 18]);
+  const gridOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.72, 0.56, 0.38]);
 
   useEffect(() => {
     if (!showIntro) {
@@ -55,8 +61,30 @@ function App() {
   return (
     <div className="min-h-screen overflow-hidden bg-surface-950 text-ink-100">
       {showIntro && <IntroLoader />}
-      <div className="pointer-events-none fixed inset-0 bg-hero-radial" />
-      <div className="pointer-events-none fixed inset-0 noise-overlay opacity-70" />
+      <motion.div
+        className="pointer-events-none fixed inset-0"
+        style={
+          shouldReduceMotion
+            ? undefined
+            : {
+                y: backgroundY,
+                rotate: backgroundRotate,
+              }
+        }
+      >
+        <div className="absolute left-[6%] top-24 h-72 w-72 rounded-full bg-accent-cyan/10 blur-3xl" />
+        <div className="absolute right-[8%] top-[18%] h-96 w-96 rounded-full bg-accent-violet/12 blur-3xl" />
+        <div className="absolute bottom-[12%] left-[14%] h-80 w-80 rounded-full bg-accent-amber/10 blur-3xl" />
+        <div className="absolute inset-0 bg-hero-radial" />
+      </motion.div>
+      <motion.div
+        className="pointer-events-none fixed inset-0 noise-overlay"
+        style={shouldReduceMotion ? { opacity: 0.64 } : { opacity: gridOpacity }}
+      />
+      <motion.div
+        className="pointer-events-none fixed left-0 right-0 top-0 z-[80] h-px origin-left bg-accent-gradient"
+        style={{ scaleX: scrollYProgress }}
+      />
       <div className="relative z-10">
         <Navbar />
         <main>

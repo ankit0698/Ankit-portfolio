@@ -1,11 +1,25 @@
 import { BriefcaseIcon } from "@heroicons/react/solid";
+import { motion, useReducedMotion } from "motion/react";
 import { experience } from "../Data/Data";
+import {
+  getRevealProps,
+  revealLeft,
+  revealRight,
+  staggerLarge,
+  staggerTight,
+} from "../UI/motion";
 
 function Experience() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
-    <section id="experience" className="section-shell">
+    <motion.section
+      id="experience"
+      className="section-shell"
+      {...getRevealProps(shouldReduceMotion, staggerLarge)}
+    >
       <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-        <div>
+        <motion.div variants={revealLeft}>
           <span className="section-kicker">
             <BriefcaseIcon className="mr-2 h-4 w-4" />
             Experience
@@ -18,15 +32,22 @@ function Experience() {
             Experience spans enterprise frontend applications, production UI
             systems, React Native apps, APIs, and agentic AI platforms.
           </p>
-        </div>
+        </motion.div>
 
         <div className="relative">
           <div className="absolute bottom-0 left-4 top-0 hidden w-px bg-gradient-to-b from-accent-cyan via-ink-50/20 to-transparent sm:block" />
-          <div className="grid gap-4">
+          <motion.div className="grid gap-4" variants={staggerTight}>
             {experience.map((item) => (
-              <article key={`${item.role}-${item.period}`} className="relative sm:pl-12">
+              <motion.article
+                key={`${item.role}-${item.period}`}
+                className="relative sm:pl-12"
+                variants={revealRight}
+              >
                 <span className="absolute left-[0.55rem] top-7 hidden h-3 w-3 rounded-full bg-accent-cyan shadow-glow sm:block" />
-                <div className="glass-panel interactive-card p-6">
+                <motion.div
+                  className="glass-panel interactive-card p-6"
+                  whileHover={shouldReduceMotion ? undefined : { y: -8, x: 6 }}
+                >
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div>
                       <p className="technical-label text-accent-cyan">{item.period}</p>
@@ -45,13 +66,13 @@ function Experience() {
                       </span>
                     ))}
                   </div>
-                </div>
-              </article>
+                </motion.div>
+              </motion.article>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

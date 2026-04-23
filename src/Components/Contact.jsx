@@ -4,7 +4,17 @@ import {
   BadgeCheckIcon,
   MailIcon,
 } from "@heroicons/react/solid";
+import { motion, useReducedMotion } from "motion/react";
 import { contactChannels, profile } from "../Data/Data";
+import {
+  getRevealProps,
+  revealLeft,
+  revealRight,
+  revealScale,
+  revealUp,
+  staggerLarge,
+  staggerTight,
+} from "../UI/motion";
 
 const inputClass =
   "mt-2 w-full rounded-control border border-ink-50/10 bg-surface-950/80 px-4 py-3 text-ink-50 shadow-soft-ring transition placeholder:text-ink-500 focus:border-accent-cyan";
@@ -17,6 +27,7 @@ const contactStats = [
 
 function Contact() {
   const [state, handleSubmit] = useForm("xrgnkpql");
+  const shouldReduceMotion = useReducedMotion();
 
   if (state.succeeded) {
     return (
@@ -41,9 +52,13 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="section-shell">
+    <motion.section
+      id="contact"
+      className="section-shell"
+      {...getRevealProps(shouldReduceMotion, staggerLarge)}
+    >
       <div className="grid gap-10 lg:grid-cols-[minmax(0,30rem)_minmax(34rem,1fr)] lg:items-stretch">
-        <div className="flex h-full flex-col gap-4">
+        <motion.div className="flex h-full flex-col gap-4" variants={staggerTight}>
           <span className="section-kicker">
             <MailIcon className="mr-2 h-4 w-4" />
             Contact
@@ -57,27 +72,37 @@ function Contact() {
             practical problem solving matter.
           </p>
 
-          <div className="mt-8 grid grid-cols-3 gap-3">
+          <motion.div className="mt-8 grid grid-cols-3 gap-3" variants={staggerTight}>
             {contactStats.map((stat) => (
-              <div key={stat.label} className="glass-panel px-4 py-4">
+              <motion.div
+                key={stat.label}
+                className="glass-panel px-4 py-4"
+                variants={revealScale}
+                whileHover={shouldReduceMotion ? undefined : { y: -6 }}
+              >
                 <p className="font-mono text-[10px] uppercase text-ink-400">
                   {stat.label}
                 </p>
                 <p className="mt-2 font-display text-xl font-semibold text-ink-50">
                   {stat.value}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="mt-8 grid gap-3 md:grid-cols-3">
+          <motion.div
+            className="mt-8 grid gap-3 md:grid-cols-3"
+            variants={staggerTight}
+          >
             {contactChannels.map((channel) => (
-              <a
+              <motion.a
                 key={channel.label}
                 href={channel.href}
                 target={channel.href.startsWith("http") ? "_blank" : undefined}
                 rel={channel.href.startsWith("http") ? "noreferrer" : undefined}
                 className="glass-panel interactive-card flex items-center justify-between gap-4 p-4 md:min-h-28 md:flex-col md:items-start"
+                variants={revealUp}
+                whileHover={shouldReduceMotion ? undefined : { y: -8 }}
               >
                 <span className="min-w-0">
                   <span className="technical-label block">{channel.label}</span>
@@ -86,11 +111,14 @@ function Contact() {
                   </span>
                 </span>
                 <ArrowRightIcon className="h-4 w-4 shrink-0 text-accent-cyan md:mt-auto" />
-              </a>
+              </motion.a>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="mt-6 rounded-panel border border-accent-cyan/20 bg-accent-cyan/10 p-5 lg:mt-auto">
+          <motion.div
+            className="mt-6 rounded-panel border border-accent-cyan/20 bg-accent-cyan/10 p-5 lg:mt-auto"
+            variants={revealLeft}
+          >
             <p className="font-mono text-xs uppercase text-accent-cyan">
               Availability
             </p>
@@ -99,12 +127,14 @@ function Contact() {
               Native apps, backend-integrated dashboards, and product UI
               systems.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <form
+        <motion.form
           onSubmit={handleSubmit}
           className="glass-panel flex h-full flex-col p-6 shadow-glow-violet sm:p-8"
+          variants={revealRight}
+          whileHover={shouldReduceMotion ? undefined : { y: -6 }}
         >
           <div className="mb-7 flex flex-col gap-3 border-b border-ink-50/10 pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -210,9 +240,9 @@ function Contact() {
             {state.submitting ? "Sending..." : "Send message"}
             <ArrowRightIcon className="h-4 w-4" />
           </button>
-        </form>
+        </motion.form>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

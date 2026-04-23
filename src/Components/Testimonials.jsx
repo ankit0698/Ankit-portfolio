@@ -1,11 +1,25 @@
 import { ChatAlt2Icon } from "@heroicons/react/solid";
+import { motion, useReducedMotion } from "motion/react";
 import { testimonials } from "../Data/Data";
+import {
+  getRevealProps,
+  revealLeft,
+  revealScale,
+  staggerLarge,
+  staggerTight,
+} from "../UI/motion";
 
 function Testimonials() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
-    <section id="testimonials" className="section-shell">
+    <motion.section
+      id="testimonials"
+      className="section-shell"
+      {...getRevealProps(shouldReduceMotion, staggerLarge)}
+    >
       <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-        <div>
+        <motion.div variants={revealLeft}>
           <span className="section-kicker">
             <ChatAlt2Icon className="mr-2 h-4 w-4" />
             Testimonials
@@ -14,12 +28,20 @@ function Testimonials() {
           <p className="section-copy">
             A few notes on collaboration, implementation quality, and the kind of delivery experience clients and teammates can expect.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="mt-12 grid gap-4 lg:grid-cols-3">
+      <motion.div
+        className="mt-12 grid gap-4 lg:grid-cols-3"
+        variants={staggerTight}
+      >
         {testimonials.map((item) => (
-          <figure key={item.name} className="glass-panel interactive-card p-6">
+          <motion.figure
+            key={item.name}
+            className="glass-panel interactive-card p-6"
+            variants={revealScale}
+            whileHover={shouldReduceMotion ? undefined : { y: -8 }}
+          >
             <div className="mb-6 flex items-center gap-4">
               <img
                 src={item.image}
@@ -34,10 +56,10 @@ function Testimonials() {
             </div>
             <div className="mb-6 h-1 w-16 rounded-full bg-warm-gradient" />
             <blockquote className="text-lg leading-8 text-ink-100">&quot;{item.quote}&quot;</blockquote>
-          </figure>
+          </motion.figure>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 

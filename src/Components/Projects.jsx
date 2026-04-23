@@ -1,5 +1,15 @@
 import { ExternalLinkIcon } from "@heroicons/react/solid";
+import { motion, useReducedMotion } from "motion/react";
 import { projects } from "../Data/Data";
+import {
+  getRevealProps,
+  revealLeft,
+  revealRight,
+  revealScale,
+  revealUp,
+  staggerLarge,
+  staggerTight,
+} from "../UI/motion";
 
 function LiveTag() {
   return (
@@ -10,7 +20,7 @@ function LiveTag() {
   );
 }
 
-function ProjectCta({ label = "View project", variant = "secondary" }) {
+function renderProjectCta(label = "View project", variant = "secondary") {
   const styles =
     variant === "primary"
       ? "border-transparent bg-accent-gradient text-white shadow-glow dark:text-accent-contrast group-hover:scale-[1.02]"
@@ -28,40 +38,49 @@ function ProjectCta({ label = "View project", variant = "secondary" }) {
 
 export default function Projects() {
   const [leadProject, ...supportingProjects] = projects;
+  const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="projects" className="section-shell">
+    <motion.section
+      id="projects"
+      className="section-shell"
+      {...getRevealProps(shouldReduceMotion, staggerLarge)}
+    >
       <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-        <div>
+        <motion.div variants={revealLeft}>
           <span className="section-kicker">Selected work</span>
           <h2 className="section-title">Product decisions first. Screenshots second.</h2>
           <p className="section-copy">
             A project only earns its place here when the product surface, technical choices, interaction details, and delivery outcomes all have a clear reason to exist.
           </p>
-        </div>
-        <a
+        </motion.div>
+        <motion.a
           href="https://github.com/ankit0698"
           target="_blank"
           rel="noreferrer"
           className="control-button border border-ink-50/10 bg-ink-50/[0.06] text-ink-50 hover:border-accent-cyan/50 hover:bg-accent-cyan/10"
+          variants={revealRight}
+          whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         >
           GitHub profile
           <ExternalLinkIcon className="h-4 w-4" />
-        </a>
+        </motion.a>
       </div>
 
       <div className="mt-12 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-        <a
+        <motion.a
           href={leadProject.link}
           target="_blank"
           rel="noreferrer"
           className="glass-panel interactive-card group overflow-hidden"
+          variants={revealScale}
+          whileHover={shouldReduceMotion ? undefined : { y: -10 }}
         >
           <div className="border-b border-ink-50/10">
             <img
               src={leadProject.image}
               alt={`${leadProject.title} screenshot`}
-              className="h-72 w-full object-cover object-top sm:h-[28rem]"
+              className="h-72 w-full object-cover object-top transition duration-700 group-hover:scale-[1.035] sm:h-[28rem]"
             />
           </div>
           <div className="grid gap-6 p-6 sm:p-8">
@@ -73,7 +92,7 @@ export default function Projects() {
                   </p>
                   {leadProject.isLive && <LiveTag />}
                 </div>
-                <ProjectCta variant="primary" />
+                {renderProjectCta("View project", "primary")}
               </div>
               <h3 className="mt-2 max-w-xl font-display text-3xl font-semibold text-ink-50">
                 {leadProject.title}
@@ -94,18 +113,20 @@ export default function Projects() {
               ))}
             </div>
           </div>
-        </a>
+        </motion.a>
 
-        <div className="grid gap-4">
+        <motion.div className="grid gap-4" variants={staggerTight}>
           {supportingProjects.slice(0, 3).map((project) => (
-            <a
+            <motion.a
               key={project.title}
               href={project.link}
               target="_blank"
               rel="noreferrer"
               className="glass-panel interactive-card group grid gap-4 overflow-hidden p-4 sm:grid-cols-[9rem_1fr]"
+              variants={revealRight}
+              whileHover={shouldReduceMotion ? undefined : { y: -8, x: 4 }}
             >
-              <img src={project.image} alt={`${project.title} screenshot`} className="h-36 w-full rounded-control object-cover sm:h-full" />
+              <img src={project.image} alt={`${project.title} screenshot`} className="h-36 w-full rounded-control object-cover transition duration-700 group-hover:scale-[1.04] sm:h-full" />
               <div className="flex flex-col justify-between">
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
@@ -116,24 +137,29 @@ export default function Projects() {
                   <p className="mt-2 line-clamp-3 text-sm leading-6 text-ink-300">{project.description}</p>
                 </div>
                 <div className="mt-4">
-                  <ProjectCta label="Open project" variant="secondary" />
+                  {renderProjectCta("Open project", "secondary")}
                 </div>
               </div>
-            </a>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      <div className="mt-4 grid gap-4 md:grid-cols-3">
+      <motion.div
+        className="mt-4 grid gap-4 md:grid-cols-3"
+        variants={staggerTight}
+      >
         {supportingProjects.slice(3).map((project) => (
-          <a
+          <motion.a
             key={project.title}
             href={project.link}
             target="_blank"
             rel="noreferrer"
             className="glass-panel interactive-card group overflow-hidden"
+            variants={revealUp}
+            whileHover={shouldReduceMotion ? undefined : { y: -8 }}
           >
-            <img src={project.image} alt={`${project.title} screenshot`} className="h-44 w-full object-cover" />
+            <img src={project.image} alt={`${project.title} screenshot`} className="h-44 w-full object-cover transition duration-700 group-hover:scale-[1.04]" />
             <div className="p-5">
               <div className="flex flex-wrap items-center gap-2">
                 <p className="technical-label">{project.subtitle}</p>
@@ -148,12 +174,12 @@ export default function Projects() {
                 ))}
               </div>
               <div className="mt-5">
-                <ProjectCta label="Open project" variant="secondary" />
+                {renderProjectCta("Open project", "secondary")}
               </div>
             </div>
-          </a>
+          </motion.a>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
